@@ -32,5 +32,13 @@ class Program
         int index = 0;
         foreach (string str in originalArray)
         {
-
+            if (str.Length <= 3)
+            {
+                newArray[index] = str;
+                index++;
+            }
         }
+
+        return newArray;
+    }
+}
